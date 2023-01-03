@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for post in post_list %}
+    <a href="/pybo/{{post.id}}/">
+        {{ post.subject }}<br>
+    </a>
+{% endfor %}
+
+<a href="/pybo/post/create">글쓰기</a>
+
+</form>
+</body>
+</html>

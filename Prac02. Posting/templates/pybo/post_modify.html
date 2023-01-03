@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/pybo/post/modify/{{post.id}}/ " method="POST">
+    {% csrf_token %}
+    Subject: <input type="text" name="subject" value="{{post.subject}}"><br>
+    Content: <input type="text" name="content" value="{{post.content}}"><br>
+    <input type="submit" name="저장">
+</form>
+</body>
+</html>
